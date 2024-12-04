@@ -1,0 +1,23 @@
+def get_odds():
+    for number in range(10):
+        if number % 2 != 0:
+            yield number
+
+# Use the generator to find the third odd number
+odds = get_odds()
+for i, value in enumerate(odds, start=1):
+    if i == 3:
+        print(value)
+        break
+
+def get_odds():
+    for number in range(10):
+        if number % 2 != 0:
+            yield number
+
+# Use the generator to find the third odd number
+odds = get_odds()
+for i, value in enumerate(odds, start=1):
+    if i == 3:
+        print(value)
+        break
